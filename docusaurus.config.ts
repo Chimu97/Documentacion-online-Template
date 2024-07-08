@@ -64,8 +64,8 @@ const config: Config = {
         src: 'https://mangoes.zectorpro.com/assets/images/logo/logo-color.png',
       },
       items: [
-        { to: 'docs/ZectorPro/introduction', label: 'ZectorPro Docs', position: 'left' },
-        { to: 'docs/ALAS/introduction', label: 'ALAS Docs', position: 'left' },
+        // { to: 'docs/ZectorPro/introduction', label: 'ZectorPro Docs', position: 'left' },
+        // { to: 'docs/ALAS/introduction', label: 'ALAS Docs', position: 'left' },
       ],
     },
     footer: {
