@@ -34,19 +34,26 @@ const config: Config = {
       'classic',
       {
         docs: {
+          lastVersion: '1.0.1',
           sidebarPath: './sidebars.ts',
+          versions: {
+            current: {
+              label: 'Next',
+              path: 'next',
+            },
+          },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
+        // blog: {
+        //   showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        //   editUrl:
+        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        // },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -64,6 +71,10 @@ const config: Config = {
         src: 'https://mangoes.zectorpro.com/assets/images/logo/logo-color.png',
       },
       items: [
+        {
+          type: 'docsVersionDropdown',
+          position: 'left',
+        },
         // { to: 'docs/ZectorPro/introduction', label: 'ZectorPro Docs', position: 'left' },
         // { to: 'docs/ALAS/introduction', label: 'ALAS Docs', position: 'left' },
       ],
